@@ -1,0 +1,81 @@
+:root {
+	--pink: hotpink;
+	--pinkClear: papayawhip;
+  --colorKirby: pink;
+}
+
+.kirby {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  display: grid;
+  place-items: center;
+}
+
+.kirby__head {
+  background: var(--colorKirby);
+  border-radius: 50%;
+  height: 150px;
+  position: absolute;
+  width: 150px;
+}
+
+.kirby__eye {
+  animation: blinkKirby 2.5s infinite;
+  background: #000000;
+  background: -webkit-linear-gradient(to top, #03a9f4, 15%, #000000);
+  background: linear-gradient(to top, #03a9f4, 15%, #000000);
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  width: 20px;
+}
+
+.kirby__eye--left {
+  left: 60px;
+}
+
+.kirby__eye--right {
+  right: 25px;
+}
+
+.kirby__eye__pupile {
+	background: #FFF;
+	width: 10px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	left: 7px;
+  animation: blinkKirbyPupile 2.5s infinite;
+}
+
+@keyframes blinkKirby {
+  0% {
+    height: 40px;
+  }
+  5% {
+    height: 1px;
+    transform: translate(0,20px);
+  }
+  10% {
+    height: 40px;
+    transform: translate(0,0);
+  }
+}
+
+@keyframes blinkKirbyPupile {
+  0% {
+    height: 20px;
+  }
+  5% {
+    height: 0px;
+    transform: translate(0,10px);
+  }
+  10% {
+    height: 20px;
+    transform: translate(0,0);
+  }
+}

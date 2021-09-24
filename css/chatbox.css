@@ -1,0 +1,59 @@
+:root {
+  --colorChat: hotpink;
+}
+
+.chat-box {
+  animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;
+  background: var(--colorChat);
+  border-radius: 20px;
+  height: 70px;
+  padding: 5px;
+  opacity: 0;
+  position: absolute;
+  right: -170px;
+  top: 0;
+  width: 150px;
+}
+
+.chat-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 10px;
+  left: -20px;
+  bottom: 5px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--colorChat);
+  transform: rotate(64deg);
+}
+
+.chat-box__text {
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  opacity: 0;
+  animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;
+
+}
+
+.chat-box .tablet__button {
+  width: 20px;
+  height: 20px;
+  display: inline-grid;
+  vertical-align: bottom;
+}
+
+.chat-box .tablet__button::after {
+  width: 7px;
+  height: 7px;
+  border-width: 1px;
+}
