@@ -15,11 +15,13 @@ btn.addEventListener('click', (event) => {
   if(tabletBtn.checked) {
     const screenText = document.querySelector('#text');
     const screenTextElement = screenText.querySelectorAll('span');
+    const room = document.querySelector('#room');
 
     tablet.style.animationName = "wideout";
     screen.style.animationName = "powerOn";
     runningAnimation(screenText);
     runningAnimationAll(screenTextElement);
+    runningAnimation(room);
 
 
   } else {
