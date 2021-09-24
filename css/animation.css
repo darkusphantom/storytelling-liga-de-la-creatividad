@@ -45,3 +45,19 @@
         opacity: 0;
     }
 }
+
+@keyframes hiddenScene {
+    0% {
+        transform: translateX(0);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+    90% {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, .4);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-200%);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, .4);
+        opacity: 0;
+    }
+}
