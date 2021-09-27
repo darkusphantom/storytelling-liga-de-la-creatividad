@@ -36,7 +36,7 @@
 .room--scene1 {
   animation:
     showWords 1.3s 22s forwards paused,
-    powerOff 1.5s 56s forwards paused
+    powerOff 1.5s 54s forwards paused
   ;
 }
 
