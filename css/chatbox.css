@@ -1,17 +1,15 @@
 :root {
-  --colorChat: hotpink;
+  --chatPink: hotpink;
+  --chatWhite: #fff;
+  --chatBlack: #000;
+  --textBlack: #000;
+  --textWhite: #fff;
 }
 
 .chat-box {
-  animation:
-    showWords 1.3s 1.3s forwards,
-    hiddenWords 1.3s 4.5s forwards
-  ;
-  background: var(--colorChat);
   border-radius: 20px;
   height: 70px;
   padding: 5px;
-  opacity: 0;
   position: absolute;
   right: -170px;
   top: 0;
@@ -29,20 +27,83 @@
   bottom: 5px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid var(--colorChat);
   transform: rotate(64deg);
 }
 
-.chat-box__text {
-  width: 85%;
-  margin: 0 auto;
-  color: white;
+.chat-box--pink {
+  background: var(--chatPink);
+}
+
+.chat-box--pink::after {
+  border-top: 20px solid var(--chatPink);
+}
+
+.chat-box--white {
+  background: var(--chatWhite);
+}
+
+.chat-box--white::after {
+  border-top: 20px solid var(--chatWhite);
+}
+
+.chat-box--black {
+  background: var(--chatWhite);
+}
+
+.chat-box--black::after {
+  border-top: 20px solid var(--chatWhite);
+}
+
+.chat-box--kirby {
+  animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;
+  height: 70px;
+  opacity: 0;
+  right: -170px;
+  top: 0;
+  width: 150px;
+}
+
+.chat-box--kirby .chat-box__text {
   opacity: 0;
   animation:
     showWords 1.3s 1.3s forwards,
     hiddenWords 1.3s 4.5s forwards
   ;
+}
 
+.chat-box--dp {
+  /*animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;*/
+  height: 200px;
+  right: 300px;
+  top: -200px;
+  width: 320px;
+  transform: scaleX(-1);
+}
+
+.chat-box--dp .chat-box__text {
+  transform: scaleX(-1);
+}
+
+.chat-box__text {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.chat-box__text--white {
+  color: var(--textWhite);
+}
+
+.chat-box__text--black {
+  color: var(--textBlack);
 }
 
 .chat-box .tablet__button {
@@ -56,4 +117,13 @@
   width: 7px;
   height: 7px;
   border-width: 1px;
+}
+
+.chat-box--scene1 {
+  animation:
+    showWords 1.3s 25s forwards paused,
+    hiddenWords 1.3s 53s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
 }

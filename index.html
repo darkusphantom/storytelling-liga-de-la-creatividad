@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/kirby.css">
   <link rel="stylesheet" href="css/chatbox.css">
+  <link rel="stylesheet" href="css/chatbox_scene.css">
   <link rel="stylesheet" href="css/room.css">
   <link rel="stylesheet" href="css/piplup.css">
+  <link rel="stylesheet" href="css/dp.css">
+  <link rel="stylesheet" href="css/shadow.css">
   <link rel="stylesheet" href="css/animation.css">
   <title>Liga de la Creatividad</title>
 </head>
@@ -18,17 +21,67 @@
 
     <div id="screen" class="screen">
       <div class="screen__container">
+
         <p id="text" class="screen__section screen__text">
           <span class="text1">Hola, humano :)</span>
-          <span class="text2">¿Cuánto tiempo? 👀</span>
-          <span class="text3">Quiero contarte una historia...</span>
+          <span class="text2">¿Cuánto tiempo?</span>
+          <span class="text3">Recuerda...</span>
+          <!--<span class="text3">... Tienes una misión que cumplir</span>-->
         </p>
 
-        <div id="room" class="screen__section room">
-          <div class="wall"></div>
+        <div id="room" class="screen__section room room--scene1">
+          <div class="wall wall--scene1"></div>
           <div class="window">
             <div class="window__mirror"></div>
             <div class="window__marco--horizontal"></div>
+          </div>
+          <div id="dp" class="dp dp--scene1">
+            <div class="dp__head">
+              <div class="dp__hair">
+                <div class="dp__hair__left"></div>
+                <div class="dp__hair__base"></div>
+                <div class="dp__hair__right"></div>
+              </div>
+              <div class="dp__eyes dp__eyes--left"></div>
+              <div class="dp__eyes dp__eyes--right"></div>
+            </div>
+            <div class="dp__arms">
+              <div class="dp__arm arm--left">
+                <div class="dp__hand dp__hand--left"></div>
+              </div>
+              <div class="dp__arm arm--right">
+                <div class="dp__hand dp__hand--right"></div>
+              </div>
+            </div>
+            <div class="dp__body">
+              <div class="dp__hoody">
+                <div class="hoody__string hoody__string--left"></div>
+                <div class="hoody__string hoody__string--right"></div>
+              </div>
+            </div>
+            <div class="dp__pants">
+              <div class="pants leg--left"></div>
+              <div class="pants leg--right"></div>
+            </div>
+            <div class="dp__longHair"></div>
+            <div id="scene-line1" class="chat-box chat-box--white chat-box--dp chat-box--scene1">
+              <div class="chat-box__text chat-box__text--black">
+                <p class="scene__line scene--1 line--1">Al fin termine el programa.</p>
+                <p class="scene__line scene--1 line--2">Pero por una extraña razon, siento que no estoy avanzando.</p>
+                <p class="scene__line scene--1 line--3">Quizas no soy lo suficiente para alcanzar lo que quiero...</p>
+                <p class="scene__line scene--1 line--4">Tengo el presentimiento de que debo hacer algo...</p>
+                <p class="scene__line scene--1 line--5">Nah, debe ser una fantasía.</p>
+                <p class="scene__line scene--1 line--6">Será mejor irme a dormir.</p>
+                <p class="scene__line scene--1 line--7">El agotamiento de programar debe estar afectándome</p>
+              </div>
+            </div>
+          </div>
+          <div id="shadow1" class="shadow shadow--scene1 hidden">
+            <div class="shadow__head">
+              <div class="shadow__mouth"></div>
+            </div>
+            <div class="shadow__body"></div>
+            <div class="shadow__base"></div>
           </div>
           <div class="picture"></div>
           <div class="bed">
@@ -50,6 +103,7 @@
           </div>
           <div class="floor"></div>
         </div>
+
       </div>
     </div>
 
@@ -69,8 +123,8 @@
         <div class="kirby__eye__pupile"></div>
       </div>
     </div>
-    <div class="chat-box">
-      <div class="chat-box__text">
+    <div class="chat-box chat-box--pink chat-box--kirby">
+      <div class="chat-box__text chat-box__text--white">
         Haz click en <span class="tablet__button"></span>
       </div>
     </div>

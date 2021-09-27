@@ -16,6 +16,11 @@ body {
   overflow: hidden;
   place-items: center;
   width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .tablet {
@@ -136,12 +141,12 @@ body {
 }
 
 .text1 {
-  animation-delay: 6.3s, 10s;
+  animation-delay: 6.3s, 9s;
   z-index: 1;
 }
 
 .text2 {
-  animation-delay: 13s, 15s;
+  animation-delay: 12s, 15s;
   z-index: 2;
 }
 

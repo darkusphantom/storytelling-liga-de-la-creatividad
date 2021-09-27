@@ -1,0 +1,55 @@
+.scene__line {
+  position: absolute;
+  margin: 0;
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.scene__line.scene--1.line--1 {
+  animation:
+    showWords 1.3s 25s forwards paused,
+    hiddenWords 1.3s 28s forwards paused
+  ;
+}
+
+.scene__line.scene--1.line--2 {
+  animation:
+    showWords 1.3s 29s forwards paused,
+    hiddenWords 1.3s 32s forwards paused
+  ;
+}
+
+.scene__line.scene--1.line--3 {
+  animation:
+    showWords 1.3s 33s forwards paused,
+    hiddenWords 1.3s 36s forwards paused
+  ;
+}
+
+.scene__line.scene--1.line--4 {
+  animation:
+    showWords 1.3s 37s forwards paused,
+    hiddenWords 1.3s 40s forwards paused
+  ;
+}
+
+.scene__line.scene--1.line--5 {
+  animation:
+    showWords 1.3s 41s forwards paused,
+    hiddenWords 1.3s 44s forwards paused
+  ;
+}
+
+.scene__line.scene--1.line--6 {
+  animation:
+    showWords 1.3s 45s forwards paused,
+    hiddenWords 1.3s 48s forwards paused
+  ;
+}
+
+.scene__line.scene--1.line--7 {
+  animation:
+    showWords 1.3s 49s forwards paused,
+    hiddenWords 1.3s 52s forwards paused
+  ;
+}

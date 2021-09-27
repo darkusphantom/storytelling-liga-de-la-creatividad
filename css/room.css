@@ -1,7 +1,7 @@
 :root {
   --brown: #7d250b;
   --brownShadow: #46190a;
-  --gray: gray;
+  /*--gray: gray;*/
   --grayClear: #c4c4c4;
   --grayShadow: #4e4e4e;
   --blue: #095ea7;
@@ -31,7 +31,13 @@
   height: 100%;
   position: relative;
   opacity: 0;
-  animation: showWords 1.3s 22s forwards paused;
+}
+
+.room--scene1 {
+  animation:
+    showWords 1.3s 22s forwards paused,
+    powerOff 1.5s 56s forwards paused
+  ;
 }
 
 .wall {
@@ -42,6 +48,10 @@
   z-index: 1;
   border-radius: 10px 10px 0 0;
   box-shadow: inset 0 -4px 5px 3px var(--blueShadow);
+}
+
+.wall--scene1 {
+  animation: shadowRoom 1s 35s paused;
 }
 
 .window {
@@ -234,7 +244,7 @@
   z-index: 2;
   box-shadow: inset -10px 10px 25px var(--grayShadow);
   border-radius: 10px;
-  transform: rotate3d(1, 1, 1, 321deg) rotate(17deg);;
+  transform: rotate3d(1, 1, 1, 321deg) rotate(17deg);
 }
 
 .laptop__front {
