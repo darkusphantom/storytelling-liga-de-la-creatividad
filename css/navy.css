@@ -1,0 +1,83 @@
+:root {
+  --wing-navi: rgba(127 255 212 / .5);
+  --body-navi: rgba(127 255 212 / 1);
+}
+
+.navi {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 1;
+  transform: scale(.5);
+  top: 100px;
+  left: 20%;
+  opacity: 0;
+  animation:
+    showWords 1.3s 29s forwards
+  ;
+}
+
+.navi__container {
+  animation: animateNavy 2s infinite;
+  background: var(--body-navi);
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  will-change: top;
+}
+
+.navi__wing {
+  background: var(--wing-navi);
+  position: absolute;
+  top: -12px;
+  height: 45px;
+  width: 130px;
+}
+
+.wing--left {
+  right: -60px;
+  transform: rotate(300deg);
+  border-radius: 10px 20px 100px 10px;
+}
+
+.wing--right {
+  left: -55px;
+  transform: rotate(65deg);
+  border-radius: 20px 10px 10px 100px;
+}
+
+.navi__wing--down {
+  width: 30px;
+  height: 30px;
+  background: var(--wing-navi);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  will-change: transform;
+}
+
+.wing--down--left {
+  bottom: -10px;
+  left: 0;
+}
+
+.wing--down--right {
+  right: 3px;
+  bottom: -15px;
+}
+
+@keyframes animateNavy {
+  0% {
+    top:0;
+  }
+  35% {
+    top:5px;
+  }
+  75% {
+    top:-5px;
+  }
+  100% {
+    top: 0px;
+  }
+}

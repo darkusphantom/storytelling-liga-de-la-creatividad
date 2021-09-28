@@ -1,9 +1,14 @@
 .scene__line {
   position: absolute;
-  margin: 0;
+  margin: 0 auto;
+  width: 90%;
   font-size: 2rem;
   opacity: 0;
 }
+
+/***************************************/
+/*               Escena 1               */
+/****************************************/
 
 .scene__line.scene--1.line--1 {
   animation:
@@ -51,5 +56,101 @@
   animation:
     showWords 1.3s 49s forwards paused,
     hiddenWords 1.3s 52s forwards paused
+  ;
+}
+
+/***************************************/
+/*               Escena 2               */
+/****************************************/
+
+.scene__line.scene--2.line--1 {
+  animation:
+    showWords 1.3s 10s forwards paused,
+    hiddenWords 1.3s 13s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--2 {
+  animation:
+    showWords 1.3s 14s forwards paused,
+    hiddenWords 1.3s 17s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--3 {
+  animation:
+    showWords 1.3s 21s forwards paused,
+    hiddenWords 1.3s 24s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--4 {
+  animation:
+    showWords 1.3s 25s forwards paused,
+    hiddenWords 1.3s 28s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--5 {
+  animation:
+    showWords 1s 28.5s forwards paused,
+    hiddenWords 1s 32s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--6 {
+  animation:
+    showWords 1.3s 32.5s forwards paused,
+    hiddenWords 1.3s 35s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--7 {
+  animation:
+    showWords 1s 35.2s forwards paused,
+    hiddenWords 1.3s 37s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--8 {
+  animation:
+    showWords 1.3s 38s forwards paused,
+    hiddenWords 1.3s 41s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--9 {
+  animation:
+    showWords 1.1s 41.5s forwards paused,
+    hiddenWords 1.3s 44.5s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--10 {
+  animation:
+    showWords 1.3s 46s forwards paused,
+    hiddenWords 1.3s 49.5s forwards paused
+  ;
+}
+
+
+.scene__line.scene--2.line--11 {
+  animation:
+    showWords 1.1s 50.5s forwards paused,
+    hiddenWords 1.1s 52.8s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--12 {
+  animation:
+    showWords 1.1s 53s forwards paused,
+    hiddenWords 1.1s 54s forwards paused
+  ;
+}
+
+.scene__line.scene--2.line--13 {
+  animation:
+    showWords 1.1s 55s forwards paused,
+    hiddenWords 1.1s 58.5s forwards paused
   ;
 }

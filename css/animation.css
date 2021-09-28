@@ -14,8 +14,8 @@
     }
     to {
         height: 100vh;
-        max-width: 100vw;
-        max-height: 100vh;
+        max-width: 1024px;
+        max-height: 696px;
     }
 }
 

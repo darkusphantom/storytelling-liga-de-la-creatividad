@@ -14,6 +14,7 @@
   right: -170px;
   top: 0;
   width: 150px;
+  will-change: opacity;
 }
 
 .chat-box::after {
@@ -54,42 +55,6 @@
   border-top: 20px solid var(--chatWhite);
 }
 
-.chat-box--kirby {
-  animation:
-    showWords 1.3s 1.3s forwards,
-    hiddenWords 1.3s 4.5s forwards
-  ;
-  height: 70px;
-  opacity: 0;
-  right: -170px;
-  top: 0;
-  width: 150px;
-}
-
-.chat-box--kirby .chat-box__text {
-  opacity: 0;
-  animation:
-    showWords 1.3s 1.3s forwards,
-    hiddenWords 1.3s 4.5s forwards
-  ;
-}
-
-.chat-box--dp {
-  /*animation:
-    showWords 1.3s 1.3s forwards,
-    hiddenWords 1.3s 4.5s forwards
-  ;*/
-  height: 200px;
-  right: 300px;
-  top: -200px;
-  width: 320px;
-  transform: scaleX(-1);
-}
-
-.chat-box--dp .chat-box__text {
-  transform: scaleX(-1);
-}
-
 .chat-box__text {
   width: 85%;
   margin: 0 auto;
@@ -119,10 +84,122 @@
   border-width: 1px;
 }
 
+.chat-box--kirby {
+  animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;
+  height: 70px;
+  opacity: 0;
+  right: -170px;
+  top: 0;
+  width: 150px;
+}
+
+.chat-box--kirby .chat-box__text {
+  opacity: 0;
+  animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;
+}
+
+.chat-box--kirby--scene2 {
+  animation:
+    showWords 1.3s 1.3s forwards paused,
+    hiddenWords 1.3s 4.5s forwards paused,
+    showWords 1.3s 6s forwards paused,
+    hiddenWords 1.3s 9s forwards paused,
+    showWords 1.3s 59s forwards paused,
+    hiddenWords 1.3s 61s forwards paused
+  ;
+}
+
+.chat-box--kirby--scene2 .kirby__text--scene2 {
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+}
+
+.chat-box--kirby--scene2 .kirby__text--scene2.line--1 {
+  animation:
+    showWords 1.3s 1.3s forwards paused,
+    hiddenWords 1.3s 4.5s forwards paused
+  ;
+}
+
+.chat-box--kirby--scene2 .kirby__text--scene2.line--2 {
+  animation:
+    showWords 1.3s 6s forwards paused,
+    hiddenWords 1.3s 9s forwards paused
+  ;
+  z-index: 1;
+}
+
+.chat-box--kirby--scene2 .kirby__text--scene2.line--3 {
+  animation:
+    showWords 1.3s 59s forwards paused,
+    hiddenWords 1.3s 61s forwards paused
+  ;
+}
+
+.chat-box--dp {
+  /*animation:
+    showWords 1.3s 1.3s forwards,
+    hiddenWords 1.3s 4.5s forwards
+  ;*/
+  height: 200px;
+  right: 300px;
+  top: -200px;
+  width: 320px;
+  transform: scaleX(-1);
+}
+
+.chat-box--dp .chat-box__text {
+  transform: scaleX(-1);
+}
+
+
 .chat-box--scene1 {
   animation:
     showWords 1.3s 25s forwards paused,
     hiddenWords 1.3s 53s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.chat-box--dp.chat-box--scene2 {
+  animation:
+    showWords 1.3s 10s forwards paused,
+    hiddenWords 1.3s 17.1s forwards paused,
+    showWords 1.3s 21s forwards paused,
+    hiddenWords 1.3s 28.1s forwards paused,
+    showWords 1.3s 32.3s forwards paused,
+    hiddenWords 1.3s 35s forwards paused,
+    showWords 1.3s 42.3s forwards paused,
+    hiddenWords 1.3s 50.1s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+
+.chat-box--navy {
+  height: 200px;
+  right: -380px;
+  top: -180px;
+  width: 320px;
+}
+
+.chat-box--navy.chat-box--scene2 {
+  animation:
+    showWords 1.3s 28.5s forwards paused,
+    hiddenWords 1.3s 32s forwards paused,
+    showWords 1.3s 35.5s forwards paused,
+    hiddenWords 1.3s 41s forwards paused,
+    showWords 1.3s 50.3s forwards paused,
+    hiddenWords 1.3s 58.5s forwards paused
   ;
   opacity: 0;
   will-change: opacity;

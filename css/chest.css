@@ -1,0 +1,113 @@
+:root {
+	--chestBorderColor: #f3be22;
+	--chestColor: #12ab11;
+	--chestColorShadow: #0a520a;
+}
+
+.chest {
+	width: 220px;
+	height: 130px;
+	background: var(--chestColor);
+	border-radius: 20px 20px 0 0;
+	z-index: 1;
+	bottom: 150px;
+	right: 20px;
+	position: absolute;
+	box-shadow: 0 -5px 30px 25px inset var(--chestColorShadow);
+}
+
+.chest::after {
+	content: '';
+	width: 20px;
+	height: 45px;
+	background: var(--chestBorderColor);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	animation: openChestTop 2s 20.4s forwards paused;
+	will-change: height;
+}
+
+.chest__head {
+	border-top: 8px solid var(--chestBorderColor);
+	border-left: 8px solid var(--chestBorderColor);
+	border-right: 8px solid var(--chestBorderColor);
+	border-bottom: 8px solid var(--chestBorderColor);
+	border-radius: 20px 20px 0 0;
+	width: 204px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	animation: openChest 2s 20s forwards paused;
+	will-change: height;
+	background: var(--chestColor);
+	box-shadow: 0 5px 30px 3px inset var(--chestColorShadow);
+}
+
+.chest__head::after {
+	content: '';
+	width: 219px;
+	height: 50px;
+	position: absolute;
+	top: -9px;
+	left: -8px;
+	z-index: 1;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 13px 10px -7px #616106 inset;
+	animation: openChestTopShadow 2s 20s forwards paused;
+	will-change: top, box-shadow;
+}
+
+.chest__lock {
+	width: 20px;
+	height: 20px;
+	border: 10px solid var(--chestBorderColor);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: brown;
+	z-index: 2;
+}
+
+.chest__base {
+	border: 8px solid var(--chestBorderColor);
+	width: 204px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	background: var(--chestColor);
+	box-shadow: 0 -5px 30px 8px inset var(--chestColorShadow);
+}
+
+@keyframes openChest {
+	from {
+		height: 50px;
+		border-top: 8px solid var(--chestBorderColor);
+	}
+	to {
+		height: 10px;
+		border-top: 0 solid var(--chestBorderColor);
+	}
+}
+
+@keyframes openChestTopShadow {
+	from {
+		top: -9px;
+		box-shadow: 0 13px 10px -7px #616106 inset;
+	}
+	to {
+		top: 0;
+		box-shadow: 0 13px 10px -10px #616106 inset;
+	}
+}
+
+@keyframes openChestTop {
+	from {
+		height: 45px;
+	}
+	to {
+		height: 15px;
+	}
+}

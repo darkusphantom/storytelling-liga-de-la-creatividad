@@ -81,7 +81,7 @@ Recuerda...
 
 ... Tienes una misión que cumplir
 
-### Escena 2 (El cuarto)
+### Escena 1 (El cuarto)
 
 - DP: Entre estudiando, jugando, comer, dormir y hacer los deberes se está volviendo demasiado... aburrido.
 > Siento que no estoy avanzando. Nada es interesante y la vida parece un ciclo repetitivo...
@@ -92,7 +92,7 @@ Recuerda...
 
 ** Se va a dormir y se va apagando el cuarto **
 
-### Escena 3 (El cuarto, quitando la els escritorio)
+### Escena 2 (El cuarto, quitando la els escritorio)
 
 ** Se enciende la luz del cuarto y DP se mueve fuera de la el escritorio **
 

@@ -40,6 +40,13 @@
   ;
 }
 
+#room2 {
+  animation:
+    showWords 1.3s 2s forwards paused
+    /*powerOff 1.5s 54s forwards paused*/
+  ;
+}
+
 .wall {
   width: 100%;
   height: 70%;
