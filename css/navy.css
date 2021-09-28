@@ -65,6 +65,13 @@
   bottom: -15px;
 }
 
+.navi--scene3 {
+  left: 50%;
+  animation:
+    showWords 1.3s 5s forwards paused,
+    moveToDP 1.5s 62s ease-out forwards paused;
+}
+
 @keyframes animateNavy {
   0% {
     top:0;
@@ -77,5 +84,14 @@
   }
   100% {
     top: 0px;
+  }
+}
+
+@keyframes moveToDP {
+  from {
+    transform: scale(.5) translate(0,0);
+  }
+  to {
+    transform: scale(.5) translate(300px, -60px);
   }
 }

@@ -18,7 +18,6 @@
   background: var(--colorShadow);
   border-radius: 50% 50%;
   position: absolute;
-  /*top: -75px;*/
   top: 35px;
   left: 30px;
   z-index: 2;
@@ -74,7 +73,6 @@
   border-radius: 40% 50% 20% 20%;
   position: absolute;
   z-index: 1;
-  /*opacity: 0;*/
 }
 
 .shadow__base {
@@ -85,7 +83,6 @@
   position: absolute;
   bottom: -15px;
   transform:skew(70deg, 356deg);
-  /*opacity: 0;*/
 }
 
 .shadow--scene1 {
@@ -93,6 +90,21 @@
     showWords .6s 35s forwards paused,
     hiddenWords .6s 36s forwards paused
   ;
+}
+
+.shadow--scene4 {
+  top: 100px;
+  left: 100px;
+  animation:
+    showWords .6s 20s forwards paused,
+    growthShadow 1s 23s forwards paused,
+    decreaseShadow 1s 26s forwards paused,
+    hiddenWords 1s 30s ease-out forwards paused
+  ;
+}
+
+.shadow--scene4 .shadow__head {
+  top: -75px;
 }
 
 @keyframes moveUp {
@@ -116,5 +128,23 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes growthShadow {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.1) translate(0, 20px);
+  }
+}
+
+@keyframes decreaseShadow {
+  from {
+    transform: scale(1.1) translate(0, 20px);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
   }
 }

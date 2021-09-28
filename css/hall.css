@@ -1,0 +1,118 @@
+:root {
+  --sky: var(--blueClear);
+  --wall: var(--blue);
+  --floor: var(--brown);
+  --desk: var(--gray);
+  --desk-top: var(--grayClear);
+  --bed-back:var(--brown);
+  --bed-body:var(--gray);
+  --bed-front:var(--brown);
+  --laptop: #353535;
+  --pillow: var(--white);
+
+  --picture: url(https://media.istockphoto.com/photos/young-plant-growing-in-sunlight-picture-id658291850?b=1&k=20&m=658291850&s=170667a&w=0&h=ZGlhxLg0AnDnD4tmgQG15rJgLQnXNEiGjHb6jxD34qM=);
+  --window: url(https://images.unsplash.com/photo-1572003818138-19cf96ee15e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+
+  --bgPicture: var(--picture) no-repeat -55px;
+  --bgWindow: var(--window) no-repeat bottom;
+}
+
+.hall {
+  animation: showWords 1s 1s forwards paused;
+}
+
+.hall .wall {
+  z-index: 0;
+}
+
+.window--hall {
+  width: 100%;
+  max-width: 200px;
+  height: 40vh;
+  max-height: 200px;
+  border: 5px solid #000;
+  position: absolute;
+  background: var(--bgWindow);
+  top: 10%;
+  left: 80%;
+  transform: translate(-80%, -10%);
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #000;
+}
+
+.window--hall::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #000;
+  z-index: 1;
+}
+
+.window::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #000;
+  transform: rotate(90deg);
+}
+
+.window--hall__mirror {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .15);
+  position: absolute;
+}
+
+#window-scene3 {
+  animation: hiddenWindow 1.3s 63s ease-out forwards paused;
+}
+
+.door--hall {
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  transform: translate(-10%, -28%);
+  width: 250px;
+  height: 320px;
+  background: var(--brown);
+  border: solid black;
+  border-width: 10px 10px 0 10px;
+  box-shadow: -2px 1px 5px 1px inset;
+}
+
+.door--hall::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  top: 180px;
+  left: 10px;
+}
+
+#doorHall-scene3 {
+  animation: hiddenDoor 1.3s 63s ease-out forwards paused;
+}
+
+@keyframes hiddenWindow {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 200%;
+  }
+}
+
+@keyframes hiddenDoor {
+  from {
+    left: 10%;
+  }
+  to {
+    left: -200%;
+  }
+}

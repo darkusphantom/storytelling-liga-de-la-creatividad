@@ -1,6 +1,6 @@
 const btn = document.querySelector('#btn');
 const nextScene = document.querySelector('selector');
-let counter = 0;
+let counter = 2;
 //let validation = [false, false, false ,false];
 
 const runningAnimation = (target) => {
@@ -59,6 +59,32 @@ const scene2 = () => {
   runningAnimationAll(sceneLineTextNavy);
 }
 
+const scene3 = () => {
+  const chatboxKirby = document.querySelector('#kirby--scene3');
+  const chatboxKirbyText = chatboxKirby.querySelectorAll('.kirby__text--scene3');
+  const hall = document.querySelector('#hall');
+  const personDP = document.querySelector('#dp3');
+  const sceneLineDP = document.querySelector('.chat-box--dp.chat-box--scene3');
+  const sceneLineTextDP = sceneLineDP.querySelectorAll('div p');
+  const navy = document.querySelector('#navi--scene3');
+  const sceneLineNavy = document.querySelector('.chat-box--navy');
+  const sceneLineTextNavy = sceneLineNavy.querySelectorAll('div p');
+  const windowScene = document.querySelector('#window-scene3');
+  const doorHall = document.querySelector('#doorHall-scene3');
+
+  runningAnimation(chatboxKirby);
+  runningAnimationAll(chatboxKirbyText);
+  runningAnimation(hall);
+  runningAnimation(personDP);
+  runningAnimation(sceneLineDP);
+  runningAnimationAll(sceneLineTextDP);
+  runningAnimation(navy);
+  runningAnimation(sceneLineNavy);
+  runningAnimationAll(sceneLineTextNavy);
+  runningAnimation(windowScene);
+  runningAnimation(doorHall);
+}
+
 btn.addEventListener('click', (event) => {
   const tabletBtn = event.target;
   const tablet = document.querySelector("#tablet");
@@ -76,6 +102,8 @@ btn.addEventListener('click', (event) => {
   } else if(counter === 1) {
     scene2()
     counter++;
+  } else if(counter === 2) {
+    scene3()
   }
 })
 

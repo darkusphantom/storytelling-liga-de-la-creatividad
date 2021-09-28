@@ -343,6 +343,15 @@
   ;
 }
 
+.dp--scene3 {
+  right: 0;
+  left: 25%;
+  animation:
+   showWords 1.3s 5s forwards paused,
+   moveToLeftDPScene3 1.5s 62s ease-out forwards paused
+  ;
+}
+
 
 @keyframes eyeLeftWatchLeft {
   from {
@@ -413,3 +422,11 @@
   }
 }
 
+@keyframes moveToLeftDPScene3 {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 70%;
+  }
+}

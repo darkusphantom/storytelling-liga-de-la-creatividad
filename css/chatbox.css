@@ -94,6 +94,7 @@
   right: -170px;
   top: 0;
   width: 150px;
+  will-change: opacity;
 }
 
 .chat-box--kirby--scene0 {
@@ -149,7 +150,7 @@
     hiddenWords 1.3s 9s forwards paused
   ;
   opacity: 0;
-  z-index: 1;
+  will-change: opacity;
 }
 
 .chat-box--kirby--scene2 .kirby__text--scene2.line--3 {
@@ -158,6 +159,20 @@
     hiddenWords 1.3s 61s forwards paused
   ;
   opacity: 0;
+}
+
+.chat-box--kirby--scene3 {
+  animation:
+    showWords 1.3s 64s forwards paused,
+    hiddenWords 1.3s 66s forwards paused
+  ;
+}
+
+.chat-box--kirby--scene1 .kirby__text--scene3 {
+  animation:
+    showWords 1.3s 64s forwards paused,
+    hiddenWords 1.3s 66s forwards paused
+  ;
 }
 
 .chat-box--dp {
@@ -197,12 +212,45 @@
   will-change: opacity;
 }
 
+.chat-box--dp.chat-box--scene3 {
+  animation:
+    showWords 1.3s 10s forwards paused,
+    hiddenWords 1.3s 13s forwards paused,
+    showWords 1.3s 23s forwards paused,
+    hiddenWords 1.3s 26s forwards paused,
+    showWords 1.3s 34.7s forwards paused,
+    hiddenWords 1.3s 36.5s forwards paused,
+    showWords 1.3s 42s forwards paused,
+    hiddenWords 1.3s 44.5s forwards paused,
+    showWords 1.3s 58s forwards paused,
+    hiddenWords 1.3s 61s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.chat-box--dp.chat-box--scene4 {
+  animation:
+    showWords 1.3s 10s forwards paused,
+    hiddenWords 1.3s 17.1s forwards paused,
+    showWords 1.3s 21s forwards paused,
+    hiddenWords 1.3s 28.1s forwards paused,
+    showWords 1.3s 32.3s forwards paused,
+    hiddenWords 1.3s 35s forwards paused,
+    showWords 1.3s 42.3s forwards paused,
+    hiddenWords 1.3s 50.1s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
 
 .chat-box--navy {
   height: 200px;
   right: -380px;
   top: -180px;
   width: 320px;
+  opacity: 0;
 }
 
 .chat-box--navy.chat-box--scene2 {
@@ -213,6 +261,21 @@
     hiddenWords 1.3s 41s forwards paused,
     showWords 1.3s 50.3s forwards paused,
     hiddenWords 1.3s 58.5s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.chat-box--navy.chat-box--scene3 {
+  animation:
+    showWords 1.3s 13.7s forwards paused,
+    hiddenWords 1.3s 22s forwards paused,
+    showWords 1.3s 27s forwards paused,
+    hiddenWords 1.3s 34s forwards paused,
+    showWords 1.3s 37s forwards paused,
+    hiddenWords 1.3s 40s forwards paused,
+    showWords 1.3s 46.7s forwards paused,
+    hiddenWords 1.3s 57s forwards paused
   ;
   opacity: 0;
   will-change: opacity;

@@ -130,7 +130,6 @@ Despues de clases
 > ¿Buscabas algo diferente? Puedo dartelo
 - No me llevarás a otro mundo a donde no podré salir hasta salvarlo, ¿verdad?
 - Navy: No
-- DP: Estamos bi...
 - Navy: Pero debes darme algo a cambio
 - DP: Ay no, las negociaciones... *Surrurro y letras pequeñas *
 - Navy: Debes darme tu alma (o algo importante tuyo * Letras chiquitas*)
@@ -143,8 +142,8 @@ Despues de clases
 
 - Navy: No. Solo bromeaba
 > Pero debes superarte si quieres encontrar lo que buscas
-- DP: ¿Será ahora?
-- Navy: Debes esperar al momento
+> o mas bien, a el...
+- DP: ¿A quien?
 
 ### Escena 4 (Sala de la casa)
 
@@ -218,3 +217,41 @@ Esto le dio la fuerza para luchar con la sombra
 > El agotamiento de programar debe estar afectándome
 
 ** Se va a dormir y se va apagando el cuarto **
+
+## Escena 3
+
+** Cambia el escenario al hall **
+
+- DP: Mariposa, ¿dijiste que cumples deseos?
+- Navy: 💢💢💢😤
+> Si. Vine a cumplirte un deseo
+> ¿Buscabas algo diferente? Puedo dartelo
+- No me llevarás a otro mundo a donde no podré salir hasta salvarlo, ¿verdad?
+- Navy: No
+- Navy: Pero debes darme algo a cambio
+- DP: Ay no, las negociaciones... *Surrurro y letras pequeñas *
+- Navy: Debes darme tu alma (o algo importante tuyo * Letras chiquitas*)
+- DP: ¿No te puedo dar la del espectador?
+- Navy: No. Solo bromeaba
+> Pero debes superarte si quieres encontrar lo que buscas
+> o mas bien, a él...
+- DP: ¿A quien?
+
+## Escena 4
+- Shadow: ¿Cuanto tiempo sin vernos?
+- DP: Nos conocemos?
+> Estoy seguro de no deber dinero...
+- Shadow: No soy el fantasma del endeudamiento ni tampoco debes dinero
+> Tienes suerte. La ultima vez quedé en deudado y fue un desastre
+- DP: Me alegro de pagar a tiempo mis cuotas
+
+DP comienza a sentir un escalofrio
+
+- Shadow: Por mucho que lo ignores, esos sentimientos estaran ahi
+> Buscas algo diferente, pero vives encerrado en tu mundo
+> Quieres mejorar, pero repites las mismas acciones a diario
+- DP: Basta...
+- Shadow: Eres aburrido, simple, sin talento y un fracaso
+> Desea todo lo que quieras...
+> ...pero el resultado será igual
+- DP: ¡Basta!
