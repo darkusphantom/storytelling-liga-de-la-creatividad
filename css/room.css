@@ -1,7 +1,6 @@
 :root {
   --brown: #7d250b;
   --brownShadow: #46190a;
-  /*--gray: gray;*/
   --grayClear: #c4c4c4;
   --grayShadow: #4e4e4e;
   --blue: #095ea7;
@@ -29,21 +28,22 @@
 .room {
   width: 100%;
   height: 100%;
-  position: relative;
   opacity: 0;
 }
 
 .room--scene1 {
   animation:
     showWords 1.3s 22s forwards paused,
-    powerOff 1.5s 54s forwards paused
+    powerOff 1.5s 54s forwards paused,
+    hiddenScene 1.5s 55s forwards paused
   ;
 }
 
 #room2 {
   animation:
-    showWords 1.3s 2s forwards paused
-    /*powerOff 1.5s 54s forwards paused*/
+    powerOn 1.3s 2s forwards paused,
+    showWords 1.3s 2s forwards paused,
+    hiddenScene 1.5s 59.5s forwards paused
   ;
 }
 

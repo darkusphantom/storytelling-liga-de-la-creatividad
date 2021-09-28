@@ -23,13 +23,12 @@
 
     <div id="screen" class="screen">
       <div class="screen__container">
-<!--
+
         <p id="text" class="screen__section screen__text">
           <span class="text1">Hola, humano :)</span>
           <span class="text2">¿Cuánto tiempo?</span>
-          <span class="text3">Recuerda...</span>-->
-          <!--<span class="text3">... Tienes una misión que cumplir</span>-->
-<!--        </p>
+          <span class="text3">Recuerda... tu...</span>
+        </p>
 
         <div id="room" class="screen__section room room--scene1">
           <div class="wall wall--scene1"></div>
@@ -105,7 +104,6 @@
           </div>
           <div class="floor"></div>
         </div>
--->
 
       <div id="room2" class="screen__section room room--scene2">
           <div class="wall"></div>
@@ -167,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="navi">
+          <div id="navi--scene2" class="navi">
             <div class="navi__container">
               <div class="navi__wing wing--left"></div>
               <div class="navi__wing wing--right"></div>
@@ -208,10 +206,17 @@
         <div class="kirby__eye__pupile"></div>
       </div>
     </div>
-    <div class="chat-box chat-box--pink chat-box--kirby chat-box--kirby--scene2">
-      <!--<div class="chat-box__text chat-box__text--white">
+    <div class="chat-box chat-box--pink chat-box--kirby .chat-box--kirby--scene0">
+      <div class="chat-box__text chat-box__text--white kirby__text--scene0">
         Haz click en <span class="tablet__button"></span>
-      </div>-->
+      </div>
+    </div>
+    <div id="kirby--scene1" class="chat-box chat-box--pink chat-box--kirby chat-box--kirby--scene1">
+      <div class="chat-box__text chat-box__text--white kirby__text--scene1">
+        Haz click en <span class="tablet__button"></span>
+      </div>
+    </div>
+    <div id="kirby--scene2" class="chat-box chat-box--pink chat-box--kirby chat-box--kirby--scene2">
       <div class="chat-box__text chat-box__text--white kirby__text--scene2 line--1">
         DP se preparaba para cumplir sus actividades..
       </div>

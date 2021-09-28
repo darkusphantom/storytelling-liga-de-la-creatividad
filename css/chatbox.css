@@ -96,11 +96,25 @@
   width: 150px;
 }
 
-.chat-box--kirby .chat-box__text {
+.chat-box--kirby--scene0 {
   opacity: 0;
   animation:
     showWords 1.3s 1.3s forwards,
     hiddenWords 1.3s 4.5s forwards
+  ;
+}
+
+.chat-box--kirby--scene1 {
+  animation:
+    showWords 1.3s 56s forwards paused,
+    hiddenWords 1.3s 58s forwards paused
+  ;
+}
+
+.chat-box--kirby--scene1 .kirby__text--scene1 {
+  animation:
+    showWords 1.3s 56s forwards paused,
+    hiddenWords 1.3s 58s forwards paused
   ;
 }
 
@@ -126,6 +140,7 @@
     showWords 1.3s 1.3s forwards paused,
     hiddenWords 1.3s 4.5s forwards paused
   ;
+  opacity: 0;
 }
 
 .chat-box--kirby--scene2 .kirby__text--scene2.line--2 {
@@ -133,21 +148,19 @@
     showWords 1.3s 6s forwards paused,
     hiddenWords 1.3s 9s forwards paused
   ;
+  opacity: 0;
   z-index: 1;
 }
 
 .chat-box--kirby--scene2 .kirby__text--scene2.line--3 {
   animation:
-    showWords 1.3s 59s forwards paused,
+    showWords 1.3s 59.3s forwards paused,
     hiddenWords 1.3s 61s forwards paused
   ;
+  opacity: 0;
 }
 
 .chat-box--dp {
-  /*animation:
-    showWords 1.3s 1.3s forwards,
-    hiddenWords 1.3s 4.5s forwards
-  ;*/
   height: 200px;
   right: 300px;
   top: -200px;

@@ -1,6 +1,7 @@
 const btn = document.querySelector('#btn');
 const nextScene = document.querySelector('selector');
-let counter = 1;
+let counter = 0;
+//let validation = [false, false, false ,false];
 
 const runningAnimation = (target) => {
   target.style.animationPlayState = "running";
@@ -9,7 +10,7 @@ const runningAnimation = (target) => {
 const runningAnimationAll = (target) => {
   target.forEach(element => element.style.animationPlayState = "running");
 }
-/*
+
 const scene1 = () => {
   const screenText = document.querySelector('#text');
   const screenTextElement = screenText.querySelectorAll('span');
@@ -19,6 +20,8 @@ const scene1 = () => {
   const sceneLine = document.querySelector('#scene-line1');
   const sceneLineText = sceneLine.querySelectorAll('div p');
   const shadow = document.querySelector('#shadow1');
+  const chatboxKirby = document.querySelector('#kirby--scene1');
+  const chatboxKirbyText = chatboxKirby.querySelector('.kirby__text--scene1');
 
   runningAnimation(screenText);
   runningAnimationAll(screenTextElement);
@@ -28,17 +31,19 @@ const scene1 = () => {
   runningAnimation(sceneLine);
   runningAnimationAll(sceneLineText);
   runningAnimation(shadow);
+  runningAnimation(chatboxKirby);
+  runningAnimation(chatboxKirbyText);
 }
-*/
 
 const scene2 = () => {
-  const chatboxKirby = document.querySelector('.chat-box--kirby');
+  const chatboxKirby = document.querySelector('#kirby--scene2');
   const chatboxKirbyText = chatboxKirby.querySelectorAll('.kirby__text--scene2');
   const room = document.querySelector('#room2');
   const personDP = document.querySelector('#dp2');
   const chest = document.querySelector('#chest').querySelectorAll('div');
   const sceneLineDP = document.querySelector('.chat-box--dp.chat-box--scene2');
   const sceneLineTextDP = sceneLineDP.querySelectorAll('div p');
+  const navy = document.querySelector('#navi--scene2');
   const sceneLineNavy = document.querySelector('.chat-box--navy');
   const sceneLineTextNavy = sceneLineNavy.querySelectorAll('div p');
 
@@ -49,6 +54,7 @@ const scene2 = () => {
   runningAnimation(sceneLineDP);
   runningAnimationAll(sceneLineTextDP);
   runningAnimationAll(chest);
+  runningAnimation(navy);
   runningAnimation(sceneLineNavy);
   runningAnimationAll(sceneLineTextNavy);
 }
@@ -61,11 +67,11 @@ btn.addEventListener('click', (event) => {
     screen.style.animationName = "powerOn";
     tablet.style.animationName = "wideout";
   } else {
-    screen.style.animationName = "powerOff";
+    //screen.style.animationName = "powerOff";
   }
 
   if (counter === 0) {
-    //scene1();
+    scene1();
     counter++;
   } else if(counter === 1) {
     scene2()

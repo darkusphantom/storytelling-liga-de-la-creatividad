@@ -12,9 +12,7 @@
   top: 100px;
   left: 20%;
   opacity: 0;
-  animation:
-    showWords 1.3s 29s forwards
-  ;
+  animation: showWords 1.3s 29s forwards paused;
 }
 
 .navi__container {
