@@ -1,6 +1,6 @@
 const btn = document.querySelector('#btn');
 const nextScene = document.querySelector('selector');
-let counter = 2;
+let counter = 0;
 //let validation = [false, false, false ,false];
 
 const runningAnimation = (target) => {
@@ -67,7 +67,7 @@ const scene3 = () => {
   const sceneLineDP = document.querySelector('.chat-box--dp.chat-box--scene3');
   const sceneLineTextDP = sceneLineDP.querySelectorAll('div p');
   const navy = document.querySelector('#navi--scene3');
-  const sceneLineNavy = document.querySelector('.chat-box--navy');
+  const sceneLineNavy = document.querySelector('#scene-line3--navy');
   const sceneLineTextNavy = sceneLineNavy.querySelectorAll('div p');
   const windowScene = document.querySelector('#window-scene3');
   const doorHall = document.querySelector('#doorHall-scene3');

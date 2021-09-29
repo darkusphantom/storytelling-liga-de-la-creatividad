@@ -19,18 +19,18 @@
 </head>
 <body>
   <div id="tablet" class="tablet">
-    <input type="checkbox" class="tablet__button" id="btn">
-    </input>
+    <input type="checkbox" class="tablet__button" id="btn"></input>
 
     <div id="screen" class="screen">
       <div class="screen__container">
-<!--
+        <!--Intro-->
         <p id="text" class="screen__section screen__text">
           <span class="text1">Hola, humano :)</span>
           <span class="text2">¿Cuánto tiempo?</span>
           <span class="text3">Recuerda... tu...</span>
-        </p>
+        </p><!--Intro-->
 
+        <!--Scene1-->
         <div id="room" class="screen__section room room--scene1">
           <div class="wall wall--scene1"></div>
           <div class="window">
@@ -77,14 +77,14 @@
                 <p class="scene__line scene--1 line--7">El agotamiento de programar debe estar afectándome</p>
               </div>
             </div>
-          </div>
+          </div><!--Fin DP-->
           <div id="shadow1" class="shadow shadow--scene1 hidden">
             <div class="shadow__head">
               <div class="shadow__mouth"></div>
             </div>
             <div class="shadow__body"></div>
             <div class="shadow__base"></div>
-          </div>
+          </div><!--Fin Shadow-->
           <div class="picture"></div>
           <div class="bed">
             <div class="bed--back"></div>
@@ -102,38 +102,49 @@
               </div>
             </div>
             <div class="piplup"></div>
-          </div>
+          </div><!--Fin Desk-->
           <div class="floor"></div>
-        </div>
+        </div><!--Fin room - scena1-->
 
+
+        <!--Scene2-->
         <div id="room2" class="screen__section room room--scene2">
-            <div class="wall"></div>
+          <div class="wall"></div>
+
             <div class="window">
               <div class="window__mirror"></div>
               <div class="window__marco--horizontal"></div>
-            </div>
+            </div><!--Fin window-->
+
             <div class="picture"></div>
+
             <div class="bed">
               <div class="bed--back"></div>
               <div class="bed--body"></div>
               <div class="pillow"></div>
               <div class="bed--front"></div>
-            </div>
+            </div><!-- Fin Bed-->
+
             <div id="chest" class="chest">
               <div class="chest__head"></div>
               <div class="chest__lock"></div>
               <div class="chest__base"></div>
             </div>
+
             <div id="dp2" class="dp dp--scene2">
+
               <div class="dp__head">
+
                 <div class="dp__hair">
                   <div class="dp__hair__left"></div>
                   <div class="dp__hair__base"></div>
                   <div class="dp__hair__right"></div>
                 </div>
+
                 <div class="dp__eyes dp__eyes--left"></div>
                 <div class="dp__eyes dp__eyes--right"></div>
               </div>
+
               <div class="dp__arms">
                 <div class="dp__arm arm--left">
                   <div class="dp__hand dp__hand--left"></div>
@@ -142,30 +153,35 @@
                   <div class="dp__hand dp__hand--right"></div>
                 </div>
               </div>
+
               <div class="dp__body">
                 <div class="dp__hoody">
                   <div class="hoody__string hoody__string--left"></div>
                   <div class="hoody__string hoody__string--right"></div>
                 </div>
               </div>
+
               <div class="dp__pants">
                 <div class="pants leg--left"></div>
                 <div class="pants leg--right"></div>
               </div>
+
               <div class="dp__longHair"></div>
+
               <div class="chat-box chat-box--white chat-box--dp chat-box--scene2">
                 <div class="chat-box__text chat-box__text--black">
                   <p class="scene__line scene--2 line--1">Esto no estaba antes.</p>
                   <p class="scene__line scene--2 line--2">Veamos que tendrá adentro</p>
                   <p class="scene__line scene--2 line--3">Oh, esta vacio. Que pena.</p>
                   <p class="scene__line scene--2 line--4">Esperaba encontrar algo</p>
-
                   <p class="scene__line scene--2 line--6">¡Hostía, una mariposa que habla!</p>
                   <p class="scene__line scene--2 line--9">¡No!... Solo revisaba.</p>
                   <p class="scene__line scene--2 line--10">No esperaba ver a una mariposa volando</p>
                 </div>
               </div>
-            </div>
+
+            </div> <!--Fin DP2-->
+
             <div id="navi--scene2" class="navi">
               <div class="navi__container">
                 <div class="navi__wing wing--left"></div>
@@ -183,12 +199,12 @@
                   <p class="scene__line scene--2 line--13">Como sea, vengo a cumplirte un deseo ✨</p>
                 </div>
               </div>
-            </div>
+            </div><!--Fin navy-->
 
             <div class="floor"></div>
-          </div>
-        </div>
--->
+        </div><!--Fin Scene2-->
+
+        <!--Scene3-->
         <div id="hall" class="screen__section room hall room--scene3">
           <div class="wall"></div>
           <div id="window-scene3" class="window--hall">
@@ -288,9 +304,10 @@
               </div>
             </div>
           <div class="floor"></div>
-        </div>
-      </div>
-    </div>
+        </div><!--Fin scene3-->
+
+      </div><!--Fin ContainerScreen-->
+    </div><!--Fin Screen-->
 
     <div class="tablet__bocina">
       <div class="tablet__bocina__circle"></div>
@@ -308,16 +325,22 @@
         <div class="kirby__eye__pupile"></div>
       </div>
     </div>
+
+    <!--Scene0-->
     <div class="chat-box chat-box--pink chat-box--kirby .chat-box--kirby--scene0">
       <div class="chat-box__text chat-box__text--white kirby__text--scene0">
         Haz click en <span class="tablet__button"></span>
       </div>
     </div>
+
+    <!--Scene1-->
     <div id="kirby--scene1" class="chat-box chat-box--pink chat-box--kirby chat-box--kirby--scene1">
       <div class="chat-box__text chat-box__text--white kirby__text--scene1">
         Haz click en <span class="tablet__button"></span>
       </div>
     </div>
+
+    <!--Scene2-->
     <div id="kirby--scene2" class="chat-box chat-box--pink chat-box--kirby chat-box--kirby--scene2">
       <div class="chat-box__text chat-box__text--white kirby__text--scene2 line--1">
         DP se preparaba para cumplir sus actividades..
@@ -329,6 +352,8 @@
         Haz click en <span class="tablet__button"></span>
       </div>
     </div>
+
+    <!--Scene3-->
     <div id="kirby--scene3" class="chat-box chat-box--pink chat-box--kirby chat-box--kirby--scene3">
       <div class="chat-box__text chat-box__text--white kirby__text--scene1">
         Haz click en <span class="tablet__button"></span>
