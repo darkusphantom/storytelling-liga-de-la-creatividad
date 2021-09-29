@@ -19,6 +19,7 @@
 
 .hall {
   animation: showWords 1s 1s forwards paused;
+
 }
 
 .hall .wall {

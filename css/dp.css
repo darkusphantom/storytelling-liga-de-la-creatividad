@@ -345,10 +345,11 @@
 
 .dp--scene3 {
   right: 0;
-  left: 25%;
+  /*left: 25%;*/
+  left: 70%; /*para borrar*/
   animation:
-   showWords 1.3s 5s forwards paused,
-   moveToLeftDPScene3 1.5s 62s ease-out forwards paused
+   showWords 1.3s 5s forwards paused
+   /*moveToLeftDPScene3 1.5s 62s ease-out forwards paused*/
   ;
 }
 

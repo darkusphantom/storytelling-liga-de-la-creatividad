@@ -48,11 +48,15 @@
 }
 
 .chat-box--black {
-  background: var(--chatWhite);
+  background: var(--chatBlack);
 }
 
 .chat-box--black::after {
-  border-top: 20px solid var(--chatWhite);
+  border-top: 20px solid var(--chatBlack);
+}
+
+.chat-box--black p {
+  color: #fff;
 }
 
 .chat-box__text {
@@ -67,7 +71,7 @@
   color: var(--textWhite);
 }
 
-.chat-box__text--black {
+.chat-box__text--black p {
   color: var(--textBlack);
 }
 
@@ -159,6 +163,7 @@
     hiddenWords 1.3s 61s forwards paused
   ;
   opacity: 0;
+  will-change: opacity;
 }
 
 .chat-box--kirby--scene3 {
@@ -175,6 +180,48 @@
   ;
 }
 
+.chat-box--kirby--scene4 {
+  animation:
+    showWords 1.3s 66s forwards paused,
+    hiddenWords 1.3s 69s forwards paused,
+    showWords 1.3s 92s forwards paused,
+    hiddenWords 1.3s 94s forwards paused
+  ;
+}
+
+.chat-box--kirby--scene4 .kirby__text--scene4 {
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+}
+
+.chat-box--kirby--scene4 .kirby__text--scene4.line--1 {
+  animation:
+    showWords 1.3s 66s forwards paused,
+    hiddenWords 1.3s 69s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.chat-box--kirby--scene4 .kirby__text--scene4.line--2 {
+  animation:
+    showWords 1.3s 92s forwards paused,
+    hiddenWords 1.3s 95.5s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.chat-box--kirby--scene4 .kirby__text--scene4.line--3 {
+  animation:
+    showWords 1.3s 104s forwards paused,
+    hiddenWords 1.3s 106s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
 .chat-box--dp {
   height: 200px;
   right: 300px;
@@ -186,7 +233,6 @@
 .chat-box--dp .chat-box__text {
   transform: scaleX(-1);
 }
-
 
 .chat-box--scene1 {
   animation:
@@ -231,14 +277,18 @@
 
 .chat-box--dp.chat-box--scene4 {
   animation:
-    showWords 1.3s 10s forwards paused,
-    hiddenWords 1.3s 17.1s forwards paused,
-    showWords 1.3s 21s forwards paused,
-    hiddenWords 1.3s 28.1s forwards paused,
-    showWords 1.3s 32.3s forwards paused,
-    hiddenWords 1.3s 35s forwards paused,
-    showWords 1.3s 42.3s forwards paused,
-    hiddenWords 1.3s 50.1s forwards paused
+    showWords 1.3s 8s forwards paused,
+    hiddenWords 1.3s 15s forwards paused,
+    showWords 1.3s 27s forwards paused,
+    hiddenWords 1.3s 30s forwards paused,
+    showWords 1.3s 45s forwards paused,
+    hiddenWords 1.3s 49s forwards paused,
+    showWords 1.3s 61.5s forwards paused,
+    hiddenWords 1.3s 63s forwards paused,
+    showWords 1.3s 70s forwards paused,
+    hiddenWords 1.3s 72s forwards paused,
+    showWords 1.3s 76s forwards paused,
+    hiddenWords 1.3s 91s forwards paused
   ;
   opacity: 0;
   will-change: opacity;
@@ -279,4 +329,30 @@
   ;
   opacity: 0;
   will-change: opacity;
+}
+
+.chat-box--shadow {
+  height: 150px;
+}
+
+.chat-box--shadow.chat-box--scene4 {
+  animation:
+    showWords 1.3s 4s forwards paused,
+    hiddenWords 1.3s 7s forwards paused,
+    showWords 1.3s 17s forwards paused,
+    hiddenWords 1.3s 26s forwards paused,
+    showWords 1.3s 31s forwards paused,
+    hiddenWords 1.3s 44s forwards paused,
+    showWords 1.3s 50s forwards paused,
+    hiddenWords 1.3s 61s forwards paused,
+    showWords 1.3s 73s forwards paused,
+    hiddenWords 1.3s 75s forwards paused,
+    showWords 1.3s 96s forwards paused,
+    hiddenWords 2s 102s forwards paused
+  ;
+  opacity: 0;
+}
+
+.chat-box--shadow .scene__line {
+  font-size: 1.1rem;
 }

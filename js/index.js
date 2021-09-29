@@ -1,6 +1,6 @@
 const btn = document.querySelector('#btn');
 const nextScene = document.querySelector('selector');
-let counter = 0;
+let counter = 4;
 //let validation = [false, false, false ,false];
 
 const runningAnimation = (target) => {
@@ -85,6 +85,32 @@ const scene3 = () => {
   runningAnimation(doorHall);
 }
 
+const scene4 = () => {
+  const chatboxKirby = document.querySelector('#kirby--scene4');
+  const chatboxKirbyText = chatboxKirby.querySelectorAll('.kirby__text--scene4');
+  const hall = document.querySelector('#hall');
+  const personDP = document.querySelector('#dp3');
+  const sceneLineDP = document.querySelector('.chat-box--dp.chat-box--scene4');
+  const sceneLineTextDP = sceneLineDP.querySelectorAll('div p');
+  const shadow = document.querySelector('#shadow3');
+  const shadowHead = shadow.querySelector('.shadow__head');
+  const shadowBody = shadow.querySelector('.shadow__body');
+  const sceneLineShadow = document.querySelector('.chat-box--shadow.chat-box--scene4');
+  const sceneLineTextShadow = sceneLineShadow.querySelectorAll('div p');
+
+  runningAnimation(chatboxKirby);
+  runningAnimationAll(chatboxKirbyText);
+  runningAnimation(hall);
+  runningAnimation(personDP);
+  runningAnimation(sceneLineDP);
+  runningAnimationAll(sceneLineTextDP);
+  runningAnimation(shadow);
+  runningAnimation(shadowHead);
+  runningAnimation(shadowBody);
+  runningAnimation(sceneLineShadow);
+  runningAnimationAll(sceneLineTextShadow);
+}
+
 btn.addEventListener('click', (event) => {
   const tabletBtn = event.target;
   const tablet = document.querySelector("#tablet");
@@ -96,14 +122,18 @@ btn.addEventListener('click', (event) => {
     //screen.style.animationName = "powerOff";
   }
 
-  if (counter === 0) {
+  if (counter === 1) {
     scene1();
     counter++;
-  } else if(counter === 1) {
-    scene2()
-    counter++;
   } else if(counter === 2) {
-    scene3()
+    scene2();
+    counter++;
+  } else if(counter === 3) {
+    scene3();
+    counter++;
+  } else if (counter === 4) {
+    scene4();
+    counter++;
   }
 })
 
