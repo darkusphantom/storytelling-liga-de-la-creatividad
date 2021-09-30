@@ -1,6 +1,6 @@
 const btn = document.querySelector('#btn');
 const nextScene = document.querySelector('selector');
-let counter = 4;
+let counter = 1;
 //let validation = [false, false, false ,false];
 
 const runningAnimation = (target) => {
@@ -95,6 +95,7 @@ const scene4 = () => {
   const shadow = document.querySelector('#shadow3');
   const shadowHead = shadow.querySelector('.shadow__head');
   const shadowBody = shadow.querySelector('.shadow__body');
+  const shadowMouth = shadow.querySelector('.shadow__mouth');
   const sceneLineShadow = document.querySelector('.chat-box--shadow.chat-box--scene4');
   const sceneLineTextShadow = sceneLineShadow.querySelectorAll('div p');
 
@@ -107,6 +108,7 @@ const scene4 = () => {
   runningAnimation(shadow);
   runningAnimation(shadowHead);
   runningAnimation(shadowBody);
+  runningAnimation(shadowMouth);
   runningAnimation(sceneLineShadow);
   runningAnimationAll(sceneLineTextShadow);
 }

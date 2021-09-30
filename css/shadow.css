@@ -1,5 +1,5 @@
 :root {
-  --shadowEyes: #000;
+  --shadowEyes: #fff;
   --colorShadow: #000;
 }
 
@@ -163,6 +163,10 @@
 .shadow--scene4 .shadow__body {
   height: 100px;
   animation: appearingShadow 2s 2s forwards paused;
+}
+
+.shadow--scene4 .shadow__head .shadow__mouth {
+  animation: showWords 1s 99s forwards paused;
 }
 
 @keyframes moveUp {

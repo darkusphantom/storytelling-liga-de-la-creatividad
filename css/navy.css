@@ -67,11 +67,11 @@
 
 .navi--scene3 {
   left: 50%;
-  transform: scale(.5) translate(300px, -60px); /*Para borrar*/
   animation:
-    showWords 1.3s 5s forwards paused
-    /*moveToDP 1.5s 62s ease-out forwards paused*/
+    showWords 1.3s 5s forwards paused,
+    moveToDP 1.5s 62s ease-out forwards paused
   ;
+  z-index: 1;
 }
 
 @keyframes animateNavy {
@@ -94,6 +94,6 @@
     transform: scale(.5) translate(0,0);
   }
   to {
-    transform: scale(.5) translate(300px, -60px);
+    transform: scale(.5) translate(500px, -60px);
   }
 }
