@@ -106,6 +106,7 @@ body {
   border-radius: 10px;
   position: relative;
   background: var(--colorScreen);
+  overflow: hidden;
 }
 
 .screen__section {

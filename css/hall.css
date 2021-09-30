@@ -26,6 +26,15 @@
   z-index: 0;
 }
 
+.container__hall {
+  width: 100%;
+  height: 100%;
+  animation:
+    powerOff 1s 104s forwards paused
+    /*hiddenScene 1s 105.5s forwards paused*/
+  ;
+}
+
 .window--hall {
   width: 100%;
   max-width: 200px;

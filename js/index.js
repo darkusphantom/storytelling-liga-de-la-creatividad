@@ -1,7 +1,6 @@
 const btn = document.querySelector('#btn');
 const nextScene = document.querySelector('selector');
 let counter = 1;
-//let validation = [false, false, false ,false];
 
 const runningAnimation = (target) => {
   target.style.animationPlayState = "running";
@@ -89,6 +88,7 @@ const scene4 = () => {
   const chatboxKirby = document.querySelector('#kirby--scene4');
   const chatboxKirbyText = chatboxKirby.querySelectorAll('.kirby__text--scene4');
   const hall = document.querySelector('#hall');
+  const containerHall = hall.parentElement;
   const personDP = document.querySelector('#dp3');
   const sceneLineDP = document.querySelector('.chat-box--dp.chat-box--scene4');
   const sceneLineTextDP = sceneLineDP.querySelectorAll('div p');
@@ -102,6 +102,7 @@ const scene4 = () => {
   runningAnimation(chatboxKirby);
   runningAnimationAll(chatboxKirbyText);
   runningAnimation(hall);
+  runningAnimation(containerHall);
   runningAnimation(personDP);
   runningAnimation(sceneLineDP);
   runningAnimationAll(sceneLineTextDP);

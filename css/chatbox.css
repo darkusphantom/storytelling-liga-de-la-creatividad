@@ -134,7 +134,9 @@
   ;
 }
 
-.chat-box--kirby--scene2 .kirby__text--scene2 {
+.chat-box--kirby--scene2 .kirby__text--scene2,
+.chat-box--kirby--scene3 .kirby__text--scene3,
+.chat-box--kirby--scene4 .kirby__text--scene4 {
   position: absolute;
   top: 0;
   margin-left: 10px;
@@ -168,16 +170,38 @@
 
 .chat-box--kirby--scene3 {
   animation:
+    showWords 1.3s 3s forwards paused,
+    hiddenWords 1.3s 5s forwards paused,
     showWords 1.3s 64s forwards paused,
     hiddenWords 1.3s 66s forwards paused
   ;
 }
 
-.chat-box--kirby--scene1 .kirby__text--scene3 {
+.chat-box--kirby--scene3 .kirby__text--scene3 {
+  animation:
+    showWords 1.3s 3s forwards paused,
+    hiddenWords 1.3s 5s forwards paused
+    showWords 1.3s 64s forwards paused,
+    hiddenWords 1.3s 66s forwards paused
+  ;
+}
+
+.chat-box--kirby--scene3 .kirby__text--scene3.line--1 {
+  animation:
+    showWords 1.3s 3s forwards paused,
+    hiddenWords 1.3s 5s forwards paused
+  ;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.chat-box--kirby--scene3 .kirby__text--scene3.line--2 {
   animation:
     showWords 1.3s 64s forwards paused,
     hiddenWords 1.3s 66s forwards paused
   ;
+  opacity: 0;
+  will-change: opacity;
 }
 
 .chat-box--kirby--scene4 {
@@ -185,14 +209,10 @@
     showWords 1.3s 66s forwards paused,
     hiddenWords 1.3s 69s forwards paused,
     showWords 1.3s 92s forwards paused,
-    hiddenWords 1.3s 94s forwards paused
+    hiddenWords 1.3s 95s forwards paused,
+    showWords 1.3s 106s forwards paused,
+    hiddenWords 1.3s 108s forwards paused
   ;
-}
-
-.chat-box--kirby--scene4 .kirby__text--scene4 {
-  position: absolute;
-  top: 0;
-  margin-left: 10px;
 }
 
 .chat-box--kirby--scene4 .kirby__text--scene4.line--1 {
@@ -207,7 +227,7 @@
 .chat-box--kirby--scene4 .kirby__text--scene4.line--2 {
   animation:
     showWords 1.3s 92s forwards paused,
-    hiddenWords 1.3s 95.5s forwards paused
+    hiddenWords 1.3s 95s forwards paused
   ;
   opacity: 0;
   will-change: opacity;
@@ -215,8 +235,8 @@
 
 .chat-box--kirby--scene4 .kirby__text--scene4.line--3 {
   animation:
-    showWords 1.3s 104s forwards paused,
-    hiddenWords 1.3s 106s forwards paused
+    showWords 1.3s 106s forwards paused,
+    hiddenWords 1.3s 108s forwards paused
   ;
   opacity: 0;
   will-change: opacity;

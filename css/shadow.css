@@ -21,7 +21,6 @@
   top: 35px;
   left: 30px;
   z-index: 2;
-  /*animation: moveUp 1s;*/
   animation:
     showWords 1.3s 2s ease-out forwards,
     movingFace 1.3s 2s ease infinite
@@ -87,51 +86,6 @@
   bottom: -15px;
   transform:skew(70deg, 356deg);
 }
-/*
-#black {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  border-radius: 10px;
-  position: absolute;
-  animation: showBlack 1s;
-  will-change: ;
-}
-
-@keyframes showBlack {
-  0% {
-
-    opacity: 0;
-
-    top: 0;
-  }
-  20% {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-  }
-  30% {
-    width: 100%;
-    height: 100%;
-
-    opacity: 1;
-    position: absolute;
-    top: 0;
-  }
-  50% {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    border-radius: 10px;
-    opacity: 0;
-    position: absolute;
-    top: 1000%;
-  }
-}
-*/
 
 .shadow--scene1 {
   animation:
